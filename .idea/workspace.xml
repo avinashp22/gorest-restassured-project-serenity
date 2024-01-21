@@ -4,19 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d6663fb-e914-4960-acdd-5ca8fb558fda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gorest/AppTest.java" afterDir="false" />
+    <list default="true" id="0d6663fb-e914-4960-acdd-5ca8fb558fda" name="Changes" comment="gorest-restassured-project-serenity">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/constants/EndPoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/constants/Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/info/UserSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/model/PostsPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/model/UserPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/utils/PropertyReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/utils/TestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/App.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2bGQANRtirw5eLMy0cFTmNRANh1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -29,10 +39,19 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Wilton/IdeaProjects/gorest-restassured-project-serenity/src/main/java/com/gorest/model",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wilton\IdeaProjects\gorest-restassured-project-serenity\src\main\java\com\gorest\model" />
+      <recent name="C:\Users\Wilton\IdeaProjects\gorest-restassured-project-serenity\src\main\java\com\gorest" />
+      <recent name="C:\Users\Wilton\IdeaProjects\gorest-restassured-project-serenity" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,9 +61,20 @@
       <option name="presentableId" value="Default" />
       <updated>1696238129650</updated>
     </task>
+    <task id="LOCAL-00001" summary="gorest-restassured-project-serenity">
+      <option name="closed" value="true" />
+      <created>1705838323544</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705838323544</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="gorest-restassured-project-serenity" />
+    <option name="LAST_COMMIT_MESSAGE" value="gorest-restassured-project-serenity" />
   </component>
 </project>
