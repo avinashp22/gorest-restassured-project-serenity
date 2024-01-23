@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="0d6663fb-e914-4960-acdd-5ca8fb558fda" name="Changes" comment="gorest-restassured-project-serenity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/UserCRUDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gorest/info/UserCRUDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serenity.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/constants/EndPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/constants/EndPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/constants/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/constants/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/model/UserPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/model/UserPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/utils/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/utils/PropertyReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/utils/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/utils/TestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/info/UserCRUDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gorest/info/UserCRUDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/propertyfile/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/propertyfile/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706009776188</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="gorest-restassured-project-serenity">
+      <option name="closed" value="true" />
+      <created>1706011963615</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706011963615</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

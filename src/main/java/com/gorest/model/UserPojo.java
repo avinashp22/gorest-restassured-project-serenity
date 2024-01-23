@@ -2,7 +2,7 @@ package com.gorest.model;
 
 public class UserPojo {
 
-   private Integer usersId;
+    private Integer usersId;
     private String name;
     private String email;
     private String gender;

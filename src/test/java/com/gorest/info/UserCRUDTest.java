@@ -12,10 +12,7 @@ import org.junit.runner.RunWith;
 import java.util.HashMap;
 import static org.hamcrest.Matchers.hasValue;
 
-
-
 @RunWith(SerenityRunner.class)
-
 public class UserCRUDTest extends TestBase {
 
     static int usersId;
@@ -27,7 +24,7 @@ public class UserCRUDTest extends TestBase {
     @Steps
     UserSteps steps;
 
-    @Title("1.This will create the user")
+    @Title("This will create the user")
     @Test
     public void T1() {
 
@@ -38,14 +35,14 @@ public class UserCRUDTest extends TestBase {
 
     }
 
-    @Title("2.This will read the user")
+    @Title("This will read the user")
     @Test
     public void T2() {
         HashMap<String, Object> userMap = steps.readUser(usersId);
         Assert.assertThat(userMap, hasValue(name));
     }
 
-    @Title("3.This will update the user")
+    @Title("This will update the user")
     @Test
     public void T3() {
         name = "Avi" + TestUtils.getRandomValue();
@@ -57,7 +54,7 @@ public class UserCRUDTest extends TestBase {
 
     }
 
-    @Title("4.This will delete the user")
+    @Title("This will delete the user")
     @Test
     public void T4() {
         steps.deleteUser(usersId).statusCode(204);
