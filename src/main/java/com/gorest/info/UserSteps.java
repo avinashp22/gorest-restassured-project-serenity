@@ -1,85 +1,85 @@
 package com.gorest.info;
 
-import com.studentapp.constants.EndPoints;
-import com.studentapp.model.StudentPojo;
-import io.restassured.http.ContentType;
+
+import com.gorest.constants.EndPoints;
+import com.gorest.constants.Path;
+import com.gorest.model.UserPojo;
 import io.restassured.response.ValidatableResponse;
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.rest.SerenityRest;
 
 import java.util.HashMap;
-import java.util.List;
 
-/**
- * Created by Jay
- */
+
 public class UserSteps {
 
-    @Step("Creating student with firstName : {0}, lastName : {1}, email : {2}, programme : {3} and courses : {4}")
-    public ValidatableResponse createStudent(String firstName, String lastName, String email, String programme,
-                                             List<String> courseList) {
-        StudentPojo studentPojo = new StudentPojo();
-        studentPojo.setFirstName(firstName);
-        studentPojo.setLastName(lastName);
-        studentPojo.setEmail(email);
-        studentPojo.setProgramme(programme);
-        studentPojo.setCourses(courseList);
+    static String bearerToken = "Bearer 9317fbf25b647c14ca6b590d6b15424038693a09192c4e774f2c9274d7f6a5f1";
+
+    @Step("Create new user with name : {0}, email : {1}, gender : {2}, status : {3}")
+    public ValidatableResponse createUser(String name, String email, String gender, String status) {
+
+        UserPojo userPojo = new UserPojo();
+        userPojo.setName(name);
+        userPojo.setEmail(email);
+        userPojo.setGender(gender);
+        userPojo.setStatus(status);
 
         return SerenityRest.given()
-                .contentType(ContentType.JSON)
+                .body(userPojo)
+                .header("Content-Type", "application/json")
+                .header("Authorization", bearerToken)
                 .when()
-                .body(studentPojo)
-                .post()
+                .post(Path.USER)
                 .then().log().all();
     }
 
-    @Step("Getting the Student information with firstName : {0}")
-    public HashMap<String, Object> getStudentInfoByFirstName(String firstName) {
-        String s1 = "findAll{it.firstName == '";
-        String s2 = "'}.get(0)";
-
-        return SerenityRest.given()
-                .when()
-                .get(EndPoints.GET_ALL_STUDENT)
-                .then().statusCode(200)
-                .extract()
-                .path(s1 + firstName + s2);
-    }
-
-    @Step("Updating student information with studentId : {0}, firstName : {1}, lastName : {2}, email : {3}, programme : {4} and courses : {5}")
-    public ValidatableResponse updateStudent(int studentId, String firstName, String lastName,
-                                             String email, String programme, List<String> courseList) {
-        StudentPojo studentPojo = new StudentPojo();
-        studentPojo.setFirstName(firstName);
-        studentPojo.setLastName(lastName);
-        studentPojo.setEmail(email);
-        studentPojo.setProgramme(programme);
-        studentPojo.setCourses(courseList);
+    @Step("Read new user with ID : {0}")
+    public HashMap<String, Object> readUser(int userId) {
 
         return SerenityRest.given().log().all()
                 .header("Content-Type", "application/json")
-                .pathParam("studentID", studentId)
-                .body(studentPojo)
+                .header("Authorization", bearerToken)
+                .pathParam("userID", userId)
                 .when()
-                .put(EndPoints.UPDATE_STUDENT_BY_ID)
+                .get(Path.USER + EndPoints.GET_SINGLE_USER_BY_ID)
+                .then().statusCode(200).extract().path("");
+    }
+
+    @Step("Update user with Id : {0},name : {1}, email : {2}, gender {3}, status : {4}")
+    public ValidatableResponse updateUser(int userId, String name, String email, String gender, String status) {
+        UserPojo usersPojo = new UserPojo();
+        usersPojo.setName(name);
+        usersPojo.setEmail(email);
+        usersPojo.setGender(gender);
+        usersPojo.setStatus(status);
+
+        return SerenityRest.given().log().all()
+                .header("Content-Type", "application/json")
+                .header("Authorization", bearerToken)
+                .pathParam("userID", userId)
+                .body(usersPojo)
+                .when()
+                .put(Path.USER + EndPoints.UPDATE_USER_BY_ID)
                 .then().log().all();
     }
 
-    @Step("Deleting student information with studentId : {0}")
-    public ValidatableResponse deleteStudent(int studentId){
-        return SerenityRest.given().log().all()
-                .pathParam("studentID", studentId)
+    @Step("Delete user with Id : {0}")
+    public ValidatableResponse deleteUser(int userId) {
+        return SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", bearerToken)
+                .pathParam("userID", userId)
                 .when()
-                .delete(EndPoints.DELETE_STUDENT_BY_ID)
-                .then();
+                .delete(Path.USER + EndPoints.DELETE_USER_BY_ID)
+                .then().log().all();
     }
 
-    @Step("Getting student information with studentId : {0}")
-    public ValidatableResponse getStudentInfoById(int studentId){
-        return SerenityRest.given().log().all()
-                .pathParam("studentID", studentId)
+    @Step("Getting user information with userId : {0}")
+    public ValidatableResponse getUserById(int userId) {
+        return SerenityRest.given()
+                .pathParam("userID", userId)
                 .when()
-                .get(EndPoints.GET_SINGLE_STUDENT_BY_ID)
-                .then();
+                .get(Path.USER + EndPoints.GET_SINGLE_USER_BY_ID)
+                .then().log().all();
     }
 }

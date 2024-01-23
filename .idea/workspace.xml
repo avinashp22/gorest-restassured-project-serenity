@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d6663fb-e914-4960-acdd-5ca8fb558fda" name="Changes" comment="gorest-restassured-project-serenity">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/constants/EndPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/constants/Path.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/info/UserSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/model/PostsPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/model/UserPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/utils/PropertyReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorest/utils/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/UserCRUDTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serenity.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/constants/EndPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/constants/EndPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/constants/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/constants/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/info/UserSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/info/UserSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/model/PostsPojo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/model/UserPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/model/UserPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/utils/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/utils/PropertyReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/CreateStudentDataDrivenTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/FirstSerenityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/StudentCURDTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/StudentCURDTestWithSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/TagsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/testbase/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/propertyfile/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/propertyfile/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2bGQANRtirw5eLMy0cFTmNRANh1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,23 +41,101 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Wilton/IdeaProjects/gorest-restassured-project-serenity/src/main/java/com/gorest/model",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Wilton/IdeaProjects/gorest-restassured-project-serenity/src/test/java/com/gorest/testbase&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wilton\IdeaProjects\gorest-restassured-project-serenity\src\test\java\com\gorest\testbase" />
+      <recent name="C:\Users\Wilton\IdeaProjects\gorest-restassured-project-serenity\src\test\java\com\gorest" />
+      <recent name="C:\Users\Wilton\IdeaProjects\gorest-restassured-project-serenity\src\test" />
       <recent name="C:\Users\Wilton\IdeaProjects\gorest-restassured-project-serenity\src\main\java\com\gorest\model" />
       <recent name="C:\Users\Wilton\IdeaProjects\gorest-restassured-project-serenity\src\main\java\com\gorest" />
-      <recent name="C:\Users\Wilton\IdeaProjects\gorest-restassured-project-serenity" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gorest.testbase.info" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserCRUDTest">
+    <configuration name="UserCRUDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gorest-restassured-project-serenity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gorest.testbase.info.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gorest.testbase.info" />
+      <option name="MAIN_CLASS_NAME" value="com.gorest.testbase.info.UserCRUDTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserCRUDTest.T1verifyUserCreatedSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gorest-restassured-project-serenity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gorest.testbase.info.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gorest.testbase.info" />
+      <option name="MAIN_CLASS_NAME" value="com.gorest.testbase.info.UserCRUDTest" />
+      <option name="METHOD_NAME" value="T1verifyUserCreatedSuccessfully" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserCRUDTest.T2verifyUserReadSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gorest-restassured-project-serenity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gorest.testbase.info.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gorest.testbase.info" />
+      <option name="MAIN_CLASS_NAME" value="com.gorest.testbase.info.UserCRUDTest" />
+      <option name="METHOD_NAME" value="T2verifyUserReadSuccessfully" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserCRUDTest.T4VerifyUserDeleteSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gorest-restassured-project-serenity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gorest.testbase.info.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gorest.testbase.info" />
+      <option name="MAIN_CLASS_NAME" value="com.gorest.testbase.info.UserCRUDTest" />
+      <option name="METHOD_NAME" value="T4VerifyUserDeleteSuccessfully" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserCRUDTest" />
+        <item itemvalue="JUnit.UserCRUDTest.T4VerifyUserDeleteSuccessfully" />
+        <item itemvalue="JUnit.UserCRUDTest.T2verifyUserReadSuccessfully" />
+        <item itemvalue="JUnit.UserCRUDTest.T1verifyUserCreatedSuccessfully" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -69,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705838323544</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gorest-restassured-project-serenity">
+      <option name="closed" value="true" />
+      <created>1705839602451</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705839602451</updated>
+    </task>
+    <task id="LOCAL-00003" summary="gorest-restassured-project-serenity">
+      <option name="closed" value="true" />
+      <created>1705840235344</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705840235344</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

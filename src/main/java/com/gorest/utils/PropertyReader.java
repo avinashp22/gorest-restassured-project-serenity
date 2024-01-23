@@ -3,9 +3,7 @@ package com.gorest.utils;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-/**
- * Created by Jay
- */
+
 public class PropertyReader {
 
     /*Rules fo implementing singleton design pattern

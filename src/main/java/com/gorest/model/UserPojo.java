@@ -2,19 +2,15 @@ package com.gorest.model;
 
 public class UserPojo {
 
-    private Integer id;
+   private Integer usersId;
     private String name;
     private String email;
     private String gender;
     private String status;
 
-    public Integer getId() {
-        return id;
-    }
+    public Integer getUsersId() {return usersId;}
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    public void setUsersId(Integer usersId) {this.usersId = usersId;}
 
     public String getName() {
         return name;
