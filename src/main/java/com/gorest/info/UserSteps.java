@@ -1,15 +1,12 @@
 package com.gorest.info;
 
-
 import com.gorest.constants.EndPoints;
 import com.gorest.constants.Path;
 import com.gorest.model.UserPojo;
 import io.restassured.response.ValidatableResponse;
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.rest.SerenityRest;
-
 import java.util.HashMap;
-
 
 public class UserSteps {
 
@@ -47,6 +44,7 @@ public class UserSteps {
 
     @Step("Update user with Id : {0},name : {1}, email : {2}, gender {3}, status : {4}")
     public ValidatableResponse updateUser(int userId, String name, String email, String gender, String status) {
+
         UserPojo usersPojo = new UserPojo();
         usersPojo.setName(name);
         usersPojo.setEmail(email);
@@ -74,7 +72,7 @@ public class UserSteps {
                 .then().log().all();
     }
 
-    @Step("Getting user information with userId : {0}")
+    @Step("Read user information with Id : {0}")
     public ValidatableResponse getUserById(int userId) {
         return SerenityRest.given()
                 .pathParam("userID", userId)
