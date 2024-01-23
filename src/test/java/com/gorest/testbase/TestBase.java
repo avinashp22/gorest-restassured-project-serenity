@@ -1,4 +1,4 @@
-package com.gorest.testbase.testbase;
+package com.gorest.testbase;
 
 import com.gorest.utils.PropertyReader;
 import io.restassured.RestAssured;

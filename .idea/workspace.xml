@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d6663fb-e914-4960-acdd-5ca8fb558fda" name="Changes" comment="gorest-restassured-project-serenity">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/UserCRUDTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serenity.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/constants/EndPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/constants/EndPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/constants/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/constants/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/info/UserSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/info/UserSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/model/PostsPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/model/UserPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/model/UserPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorest/utils/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorest/utils/PropertyReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/CreateStudentDataDrivenTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/FirstSerenityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/StudentCURDTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/StudentCURDTestWithSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/TagsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/testbase/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/propertyfile/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/propertyfile/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/info/UserCRUDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gorest/info/UserCRUDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gorest/testbase/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +51,7 @@
       <recent name="com.gorest.testbase.info" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserCRUDTest">
+  <component name="RunManager" selected="Maven.gorest-runner">
     <configuration name="UserCRUDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gorest-restassured-project-serenity" />
       <extension name="coverage">
@@ -170,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705840235344</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gorest-restassured-project-serenity">
+      <option name="closed" value="true" />
+      <created>1706009776188</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706009776188</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

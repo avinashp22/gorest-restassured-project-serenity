@@ -1,7 +1,6 @@
-package com.gorest.testbase.info;
+package com.gorest.info;
 
-import com.gorest.info.UserSteps;
-import com.gorest.testbase.testbase.TestBase;
+import com.gorest.testbase.TestBase;
 import com.gorest.utils.TestUtils;
 import io.restassured.response.ValidatableResponse;
 import net.serenitybdd.annotations.Steps;
